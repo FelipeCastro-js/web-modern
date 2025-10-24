@@ -3,3 +3,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+#overview {
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+@media (min-width: 760px) {
+  #overview {
+    border-bottom-right-radius: 250px;
+  }
+}

@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <div className="grid items-center justify-between md:grid-cols-2 gap:4 md:gap-20 md:px-20">
       <Image
-        src="/assets/logo.png"
+        src="/assets/cfdev.png"
         alt="Logo CFDevs"
         width="200"
         height="25"
