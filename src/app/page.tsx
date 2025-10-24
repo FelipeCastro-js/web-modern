@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { Discount } from "@/components/Discount";
 import { Features } from "@/components/Features";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { Overview } from "@/components/Overview";
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Practice />
         <Plans />
+        <Discount />
       </div>
     </main>
   );
