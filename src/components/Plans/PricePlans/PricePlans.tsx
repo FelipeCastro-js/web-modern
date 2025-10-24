@@ -1,7 +1,10 @@
 import { MotionTransition } from "@/components/MotionTransition";
 import { pricesPlansData } from "./PricesPlans.data";
+import { PricesPlansProps } from "./PricesPlans.types";
 
-export function PricePlans() {
+export function PricePlans(props: PricesPlansProps) {
+  const { isMonthly } = props;
+
   return (
     <div id="pricing" className="grid gap-10 my-5 md:grid-cols-3">
       {pricesPlansData.map(
@@ -12,7 +15,10 @@ export function PricePlans() {
               <p className="text-center">{description}</p>
               <div className="flex items-end justify-center my-7">
                 <span className="text-6xl font-black text-emerald-600">
-                  {prices[0].price}
+                  {isMonthly ? prices[0].price : prices[1].price}
+                </span>
+                <span className="ml-3 text-xl font-extrabold text-slate-400">
+                  {isMonthly ? prices[0].name : prices[1].name}
                 </span>
               </div>
               {features.map(({ id, name, active }) => (
@@ -21,6 +27,17 @@ export function PricePlans() {
                   <span className="ml-4">{name}</span>
                 </div>
               ))}
+              <div className="my-6 text-center">
+                <button
+                  className={`px-8 py-3 rounded-xl font-semibold transition-colors duration-300 ${
+                    primary
+                      ? "border-2 border-emerald-500 text-emerald-500 bg-white hover:bg-emerald-50"
+                      : "text-white bg-emerald-600 hover:bg-emerald-700"
+                  }`}
+                >
+                  Hire Plan
+                </button>
+              </div>
             </div>
           </MotionTransition>
         )

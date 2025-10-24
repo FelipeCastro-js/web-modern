@@ -8,8 +8,8 @@ export const pricesPlansData: PricesPlansData = [
       "Perfect for small events or personal sessions. Includes a short photoshoot and edited images.",
     primary: false,
     prices: [
-      { id: 1, name: "Monthly", price: "$199" },
-      { id: 2, name: "Yearly", price: "$1,999" },
+      { id: 1, name: "/Monthly", price: "$199" },
+      { id: 2, name: "/Yearly", price: "$1,999" },
     ],
     features: [
       { id: 1, name: "2-hour session", active: true },
@@ -25,8 +25,8 @@ export const pricesPlansData: PricesPlansData = [
       "Ideal for weddings, corporate events, or brand shoots. Extended coverage with more edits.",
     primary: true,
     prices: [
-      { id: 1, name: "Monthly", price: "$499" },
-      { id: 2, name: "Yearly", price: "$4,999" },
+      { id: 1, name: "/Monthly", price: "$499" },
+      { id: 2, name: "/Yearly", price: "$4,999" },
     ],
     features: [
       { id: 1, name: "6-hour session", active: true },
@@ -42,8 +42,8 @@ export const pricesPlansData: PricesPlansData = [
       "Comprehensive marketing support including photography, content creation, and ad management.",
     primary: false,
     prices: [
-      { id: 1, name: "Monthly", price: "$899" },
-      { id: 2, name: "Yearly", price: "$8,999" },
+      { id: 1, name: "/Monthly", price: "$899" },
+      { id: 2, name: "/Yearly", price: "$8,999" },
     ],
     features: [
       { id: 1, name: "Professional photoshoot (4 hours)", active: true },

@@ -1,8 +1,11 @@
-"use-client";
+"use client";
 
+import { useState } from "react";
 import { PricePlans } from "./PricePlans";
 
 export default function Plans() {
+  const [isMonthly, setIsMonthly] = useState(true);
+
   return (
     <div className="py-20 md:py-56">
       <h2 className="text-4xl font-bold text-center">
@@ -20,7 +23,7 @@ export default function Plans() {
           <label className="relative inline-flex items-center mr-5 cursor-pointer">
             <input type="checkbox" className="sr-only peer" />
             <div
-              // onClick={() => console.log("example")}
+              onClick={() => setIsMonthly(!isMonthly)}
               className="relative w-11 h-6 bg-gray-300 rounded-full peer-focus:ring-emerald-500 
              peer-checked:after:translate-x-full peer-checked:after:border-white 
              after:content-[''] after:absolute after:top-0.5 after:left-[2px] 
@@ -32,7 +35,7 @@ export default function Plans() {
         </div>
         <span className="text-xl font-bold text-center">Annual</span>
       </div>
-      <PricePlans />
+      <PricePlans isMonthly={isMonthly} />
     </div>
   );
 }
