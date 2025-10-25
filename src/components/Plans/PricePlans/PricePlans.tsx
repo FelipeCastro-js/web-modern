@@ -6,11 +6,14 @@ export function PricePlans(props: PricesPlansProps) {
   const { isMonthly } = props;
 
   return (
-    <div id="pricing" className="grid gap-10 my-5 md:grid-cols-3">
+    <div
+      id="pricing"
+      className="mx-auto grid gap-10 my-10 w-full max-w-7xl px-5 md:grid-cols-3"
+    >
       {pricesPlansData.map(
         ({ id, name, description, prices, features, primary }) => (
           <MotionTransition key={id}>
-            <div className="p-4 shadow-lg rounded-xl shadow-emerald-100">
+            <div className="flex flex-col justify-between h-full p-4 shadow-lg rounded-xl shadow-emerald-100">
               <h4 className="mb-5 text-2xl font-bold text-center">{name}</h4>
               <p className="text-center">{description}</p>
               <div className="flex items-end justify-center my-7">
@@ -22,9 +25,14 @@ export function PricePlans(props: PricesPlansProps) {
                 </span>
               </div>
               {features.map(({ id, name, active }) => (
-                <div className="flex justify-center my-4">
-                  {active ? <CheckIcon /> : <CloseIcon />}
-                  <span className="ml-4">{name}</span>
+                <div
+                  key={id}
+                  className="flex items-center gap-4 my-4 min-h-40px"
+                >
+                  <div className="w-6 h-6 flex items-center justify-center">
+                    {active ? <CheckIcon /> : <CloseIcon />}
+                  </div>
+                  <span className="leading-none">{name}</span>
                 </div>
               ))}
               <div className="my-6 text-center">

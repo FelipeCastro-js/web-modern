@@ -9,13 +9,13 @@ export function Practice() {
       >
         <div className="md:pr-20">
           <h2 className="mb-10 text-4xl font-extrabold">
-            You can practice <br /> any time
-            <span className="text-emerald-400"> that suits you</span>
+            You can grow your <br /> business
+            <span className="text-emerald-400"> on your own time</span>
           </h2>
           <p className="mb-10">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste dicta
-            tenetur mollitia architecto cum quae? Fuga perspiciatis repellat
-            corporis iure sunt .
+            Access flexible marketing solutions and expert guidance whenever you
+            need it. Our tools and strategies are built to fit your schedule and
+            accelerate your growth
           </p>
           <button className="px-8 py-3 text-white bg-emerald-400 rounded-xl">
             Start now

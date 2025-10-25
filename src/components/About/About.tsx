@@ -14,13 +14,14 @@ export function About() {
       </MotionTransition>
       <div className="md:pr-20">
         <h2 className="mb-10 text-4xl font-bold">
-          We have been <br />{" "}
-          <span className="text-emerald-400">improving our products</span>
+          We’ve been <br />{" "}
+          <span className="text-emerald-400">improving our services</span>
           <br /> for years
         </h2>
         <p className="mb-10">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
-          eligendi molestiae cupiditate molestias
+          Our team continuously refines strategies, tools, and creative
+          solutions to ensure your brand stays ahead in a fast‑changing digital
+          world.
         </p>
         <button className="px-8 py-3 bg-emerald-400 rounded-xl text-white">
           Start now

@@ -13,8 +13,8 @@ export default function Plans() {
         <span className="text-emerald-400"> our plans</span>
       </h2>
       <p className="max-w-lg mx-auto mt-10 text-center">
-        Lorem ipsum, lorem ipsum lorem ispum ipsum lorem ispum ipsum lorem ispum
-        ipsum lorem ispum ipsum lorem ispumipsum lorem ispum
+        Discover flexible marketing solutions tailored to your business goals.
+        Choose the plan that fits your needs and start growing today.
       </p>
 
       <div className="grid items-center justify-center max-w-sm grid-cols-3 mx-auto my-10 overflow-hidden">
@@ -26,7 +26,7 @@ export default function Plans() {
               onClick={() => setIsMonthly(!isMonthly)}
               className="relative w-11 h-6 bg-gray-300 rounded-full peer-focus:ring-emerald-500 
              peer-checked:after:translate-x-full peer-checked:after:border-white 
-             after:content-[''] after:absolute after:top-0.5 after:left-[2px] 
+             after:content-[''] after:absolute after:top-0.5 after:left-0.5 
              after:bg-white after:border-gray-400 after:border 
              after:rounded-full after:h-5 after:w-5 after:transition-all 
              peer-checked:bg-emerald-500 cursor-pointer"

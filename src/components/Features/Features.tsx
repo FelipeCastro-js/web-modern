@@ -10,8 +10,8 @@ export function Features() {
     >
       <div>
         <h2 className="mb-4 text-4xl font-bold">
-          Because we are <br />
-          <span className="text-emerald-500">better than others</span>
+          Because we deliver <br />
+          <span className="text-emerald-500">more than others</span>
         </h2>
       </div>
       {dataFeatures.map(({ id, image, text, additionalClass }) => (

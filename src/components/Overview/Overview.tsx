@@ -11,11 +11,12 @@ export function Overview() {
       <div className="items-center md:grid md:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold text-white md:leading-snug md:text-6xl">
-            Develop your skills <br /> for the future
+            Develop your brand <br /> for the future
           </h1>
           <p className="mt-5 text-white">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-            molestiae, sed harum cum aspernatur ipsum?
+            We help businesses grow through creative strategies, impactful
+            visuals, and data-driven marketing campaigns that connect with the
+            right audience.
           </p>
           <div className="flex justify-start gap-4 my-10">
             {dataSocialNetwork.map(({ id, icon, name, link }) => (
@@ -33,12 +34,12 @@ export function Overview() {
             <button className="px-8 py-3 mr-10 mb-5 text-white font-semibold rounded-xl bg-linear-to-r from-green-500 via-emerald-500 to-teal-400 hover:opacity-90 transition">
               Start now
             </button>
-            <button className="px-8 py-3 mr-10 mb-5 text-emerald-600 font-semibold rounded-xl bg-emerald-50 border border-emerald-200 hover:bg-emerald-500 hover:text-white transition">
+            <button className="px-8 py-3 mr-10 mb-10 text-emerald-600 font-semibold rounded-xl bg-emerald-50 border border-emerald-200 hover:bg-emerald-500 hover:text-white transition">
               I have a coupon
             </button>
           </div>
         </div>
-        <div>
+        <div className="md:ml-50">
           <Image
             src="/assets/overview2.png"
             alt="overview"

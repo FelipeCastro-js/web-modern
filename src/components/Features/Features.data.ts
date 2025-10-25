@@ -8,7 +8,7 @@ export const dataFeatures = [
   {
     id: 2,
     image: "construction",
-    text: "Working for 20 years",
+    text: "Working for 5 years",
     additionalClass: "mt-20",
   },
   {
